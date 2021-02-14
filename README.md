@@ -1,3 +1,9 @@
+_Note_: The sole reason that this fork exists is that things we're collapsing on my system due to the unix `file` utility having a seemingly intractable bug which makes `file -p [file]` fail with `SIGSYS` (!). So what do we do? We just omit the `-p` flag and there we go (and maybe also look for a better solution in the long term).
+
+The rest of this README is basically taken as-is from the [original repository](https://github.com/Xuyuanp/yanil).
+
+----
+
 # Yanil
 Yet Another Nerdtree In Lua
 
@@ -11,7 +17,7 @@ This not an out-of-box nerdtree alternative (and won't be), but a lib to build y
 
 ## Installation
 
-`Plug 'Xuyuanp/yanil'`
+`Plug 'BiCapitalization/yanil'`
 
 ## Setup
 
